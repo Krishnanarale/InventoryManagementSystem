@@ -36,7 +36,7 @@
           <?php if(in_array('createGroup', $user_permission) || in_array('updateGroup', $user_permission) || in_array('viewGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
             <li class="treeview" id="mainGroupNav">
               <a href="#">
-                <i class="fa fa-files-o"></i>
+                <i class="fa fa-universal-access"></i>
                 <span>Groups</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
@@ -65,7 +65,7 @@
           <?php if(in_array('createCategory', $user_permission) || in_array('updateCategory', $user_permission) || in_array('viewCategory', $user_permission) || in_array('deleteCategory', $user_permission)): ?>
             <li id="categoryNav">
               <a href="<?php echo base_url('category/') ?>">
-                <i class="fa fa-files-o"></i> <span>Category</span>
+                <i class="fa fa-tasks"></i> <span>Category</span>
               </a>
             </li>
           <?php endif; ?>
@@ -73,7 +73,7 @@
           <?php if(in_array('createStore', $user_permission) || in_array('updateStore', $user_permission) || in_array('viewStore', $user_permission) || in_array('deleteStore', $user_permission)): ?>
             <li id="storeNav">
               <a href="<?php echo base_url('stores/') ?>">
-                <i class="fa fa-files-o"></i> <span>Stores</span>
+                <i class="fa fa-home"></i> <span>Stores</span>
               </a>
             </li>
           <?php endif; ?>
@@ -81,7 +81,7 @@
           <?php if(in_array('createAttribute', $user_permission) || in_array('updateAttribute', $user_permission) || in_array('viewAttribute', $user_permission) || in_array('deleteAttribute', $user_permission)): ?>
           <li id="attributeNav">
             <a href="<?php echo base_url('attributes/') ?>">
-              <i class="fa fa-files-o"></i> <span>Attributes</span>
+              <i class="fa fa-snowflake-o"></i> <span>Attributes</span>
             </a>
           </li>
           <?php endif; ?>
@@ -110,7 +110,7 @@
           <?php if(in_array('createOrder', $user_permission) || in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
             <li class="treeview" id="mainOrdersNav">
               <a href="#">
-                <i class="fa fa-dollar"></i>
+                <i class="fa fa-shopping-cart"></i>
                 <span>Orders</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
@@ -137,7 +137,7 @@
 
 
           <?php if(in_array('updateCompany', $user_permission)): ?>
-            <li id="companyNav"><a href="<?php echo base_url('company/') ?>"><i class="fa fa-files-o"></i> <span>Company</span></a></li>
+            <li id="companyNav"><a href="<?php echo base_url('company/') ?>"><i class="fa fa-university"></i> <span>Company</span></a></li>
           <?php endif; ?>
 
         
@@ -148,12 +148,12 @@
           <li><a href="<?php echo base_url('users/profile/') ?>"><i class="fa fa-user-o"></i> <span>Profile</span></a></li>
         <?php endif; ?>
         <?php if(in_array('updateSetting', $user_permission)): ?>
-          <li><a href="<?php echo base_url('users/setting/') ?>"><i class="fa fa-wrench"></i> <span>Setting</span></a></li>
+          <li><a href="<?php echo base_url('users/setting/') ?>"><i class="fa fa-cogs"></i> <span>Setting</span></a></li>
         <?php endif; ?>
 
         <?php endif; ?>
         <!-- user permission info -->
-        <li><a href="<?php echo base_url('auth/logout') ?>"><i class="glyphicon glyphicon-log-out"></i> <span>Logout</span></a></li>
+        <li><a href="<?php echo base_url('auth/logout') ?>"><i class="glyphicon glyphicon-log-out"></i> <span>Sign Out</span></a></li>
 
       </ul>
     </section>
